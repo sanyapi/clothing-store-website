@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KateJ Fashion | All Collections</title>
+    <link rel="stylesheet" href="assets/css/all-collections.css">
+</head>
+
+<body>
+
+ <!-- Navigation Bar -->
+<section class="header">
+  <nav>
+      <a href="index.html"><img src="assets/img/logo.png"></a>
+      <div class="nav-links">
+          <ul id=MenuItems>
+              <li><a class="link"href="/index.html">Home</a></li>
+              <li><a class="link"href="/all-collections.html">All Collections</a></li>
+              <li><a class="link"href="bag.html">Bag</a></li>
+          </ul>
+      </div>
+      <img class="menu-icon" src="assets/img/menu.png"
+      onclick="menutoggle()">
+  </nav>
+
+  <!-- All Collections -->
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>All Collections</h2>
+      <select>
+        <option value="">All</option>
+        <option value="">Tops</option>
+        <option value="">Footwear</option>
+        <option value="">Accessories</option>
+        <option value="">Sale</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <img src="assets/img/Collections/accessory (1).JPG" alt="" />
+        <h4>Elegant Pearl Bead Choker</h4>
+        <p>PHP 70.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/accessory (4).JPG" alt="" />
+        <h4>Lavender Hand Bag</h4>
+        <p>PHP 195.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/accessory (5).JPG" alt="" />
+        <h4>Chic Shoulder Bag</h4>
+        <p>PHP 190.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/footwear (3).JPG" alt="" />
+        <h4>Classic Black Heeled Boots</h4>
+        <p>PHP 230.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/tops (1).JPG" alt="" />
+        <h4>Comfy Cropped Sando Top</h4>
+        <p>PHP 90.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/tops (2).JPG" alt="" />
+        <h4>Comfy Top and Short Terno</h4>
+        <p>PHP 195.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/tops (6).JPG" alt="" />
+        <h4>Classic Faded Denim Jacket</h4>
+        <p>PHP 350.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/tops (8).JPG" alt="" />
+        <h4>Laced Off-shoulder Top</h4>
+        <p>PHP 210.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="/assets/img/Collections/tops (10).JPG" alt="" />
+        <h4>Cute White Top</h4>
+        <p>PHP 200.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/tops (11).JPG" alt="" />
+        <h4>Comfy Patterned Tank Top</h4>
+        <p>PHP 95.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/tops (4).JPG" alt="" />
+        <h4>Chic Nike Embroidered Top</h4>
+        <p>PHP 120.00</p>
+      </div>
+
+      <div class="col-4">
+        <img src="assets/img/Collections/accessory (6).JPG" alt="" />
+        <h4>Chic Hand Bag</h4>
+        <p>PHP 100.00</p>
+      </div>
+    </div>
+
+    <div class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>&#8594;</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__addr">
+      <div class="footer-logo-container">
+        <img class="footer-logo-img" src="assets/img/logo.png" alt="KateJ Fashion logo">
+      </div>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Address</h2>
+
+        <ul class="nav-address">
+          <li>
+            <address>
+              Block 1, Lot 6, Phase 3 <br>
+              Apo Sandawa Homes, Kidapawan City
+            </address>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Follow us</h2>
+
+        <ul class="follow-us">
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Have concerns?</h2>
+        <ul class="mail-us">
+          <li>
+            <a class="footer__btn" href="mailto:example@gmail.com">message us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- JS for Toggle Menu -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "200px"
+        }
+      else
+        {
+          MenuItems.style.maxHeight = "0px"
+        }
+    }
+  </script>
+
+</body>
+</html>

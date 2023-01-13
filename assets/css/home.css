@@ -1,0 +1,137 @@
+@import url(nav.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4ebe0;
+    color: #2f200e;
+    font-family: Sofia Pro SemiBold, Helvetica Neue, Helvetica, Arial;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../img/main-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Logo and button */
+
+.main-header-wrapper {
+    margin-top: 300px;
+    text-align: center;
+    width: 100%;
+}
+
+img.logo {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+
+.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #f4ebe0;
+    padding: 20px 50px;
+    font-size: 30px;
+    background-color: #2f200e;
+    position: relative;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #f4ebe0;
+    color: #2f200e;
+    transition: 0.5s;
+}
+
+/* All Collections Section */
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 100px;
+  transition: transform 0.5s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 50px 50px;
+  line-height: 150px;
+  color: #2f200e;
+  font-size: 8vh;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a:visited {
+  text-decoration: none;
+  color: #2f200e;
+}
+
+h4 {
+  color: #814d12;
+  font-weight: normal;
+}
+
+.col-4 img{
+  cursor: pointer;
+}
+
+.col-4 p {
+  font-size: 14px;
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 845px) {
+  .row {
+    text-align: center;
+  }
+
+  .col-4 {
+    flex-basis: 50%
+  }
+
+  .logo img {
+    width: auto;
+    height: auto;
+  }
+
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../img/main-img.jpg');
+    background-position: center;
+  }
+}

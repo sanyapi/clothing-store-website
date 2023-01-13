@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KateJ Fashion | Bag</title>
+    <link rel="stylesheet" href="assets/css/bag.css">
+</head>
+
+<body>
+
+ <!-- Navigation Bar -->
+<section class="header">
+  <nav>
+      <a href="index.html"><img src="assets/img/logo.png"></a>
+      <div class="nav-links">
+          <ul id=MenuItems>
+              <li><a class="link"href="/index.html">Home</a></li>
+              <li><a class="link"href="/all-collections.html">All Collections</a></li>
+              <li><a class="link"href="bag.html">Bag</a></li>
+          </ul>
+      </div>
+      <img class="menu-icon" src="assets/img/menu.png"
+      onclick="menutoggle()">
+  </nav>
+
+<!-- Bag Item Details -->
+<div class="small-container bag-page">
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="bag-info">
+          <img src="assets/img/Collections/accessory (4).JPG" alt="">
+          <div>
+            <p>Lavender Hand Bag</p>
+            <small>Price: PHP 195.00</small>
+            <br>
+            <a href="">Remove</a>
+          </div>
+        </div>
+
+      </td>
+      <td><input type="number" value="1"></td>
+      <td>PHP 195.00</td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="bag-info">
+          <img src="assets/img/Collections/tops (8).JPG" alt="">
+          <div>
+            <p>Laced Off-shoulder Top</p>
+            <small>Price: PHP 210.00</small>
+            <br>
+            <a href="">Remove</a>
+          </div>
+        </div>
+
+      </td>
+      <td><input type="number" value="1"></td>
+      <td>PHP 210.00</td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="bag-info">
+          <img src="assets/img/Collections/footwear (3).JPG" alt="">
+          <div>
+            <p>Classic Black Heeled Boots</p>
+            <small>Price: PHP 230.00</small>
+            <br>
+            <a href="">Remove</a>
+          </div>
+        </div>
+
+      </td>
+      <td><input type="number" value="1"></td>
+      <td>PHP 230.00</td>
+    </tr>
+  </table>
+
+  <div class="total-price">
+    <table>
+      <tr>
+        <td>Subtotal</td>
+        <td>PHP 635.00</td>
+      </tr>
+      <tr>
+        <td>Tax</td>
+        <td>PHP 76.2.00</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>PHP 711.20</td>
+      </tr>
+      <tr>
+        <td>
+          <a class="checkout-btn" href="#">CHECK OUT</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__addr">
+      <div class="footer-logo-container">
+        <img class="footer-logo-img" src="assets/img/logo.png" alt="KateJ Fashion logo">
+      </div>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Address</h2>
+
+        <ul class="nav-address">
+          <li>
+            <address>
+              Block 1, Lot 6, Phase 3 <br>
+              Apo Sandawa Homes, Kidapawan City
+            </address>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Follow us</h2>
+
+        <ul class="follow-us">
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Have concerns?</h2>
+        <ul class="mail-us">
+          <li>
+            <a class="footer__btn" href="mailto:example@gmail.com">message us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- JS for Toggle Menu -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "200px"
+        }
+      else
+        {
+          MenuItems.style.maxHeight = "0px"
+        }
+    }
+  </script>
+
+</body>
+</html>
